@@ -1,16 +1,18 @@
 function changeClothes(type) {
   const doll = document.getElementById("doll");
+  const selectedOption = document.getElementById(type).value;
+
   switch (type) {
     case "dress":
-      doll.src = "images/doll_dress.png";
+      doll.src = `images/${selectedOption}.png`;
       break;
     case "shoes":
-      doll.src = "images/doll_shoes.png";
+      doll.src = `images/${selectedOption}.png`;
       break;
     case "hat":
-      doll.src = "images/doll_hat.png";
+      doll.src = `images/${selectedOption}.png`;
       break;
     default:
-      doll.src = "images/doll.png";
+      break;
   }
 }

@@ -12,9 +12,30 @@
         <img id="doll" src="images/doll.png" alt="Muñeca" />
       </div>
       <div class="clothes-container">
-        <button onclick="changeClothes('dress')">Vestido</button>
-        <button onclick="changeClothes('shoes')">Calzado</button>
-        <button onclick="changeClothes('hat')">Sombrero</button>
+        <div>
+          <label for="dress">Vestido:</label>
+          <select id="dress" onchange="changeClothes('dress')">
+            <option value="dress1">Vestido 1</option>
+            <option value="dress2">Vestido 2</option>
+            <option value="dress3">Vestido 3</option>
+          </select>
+        </div>
+        <div>
+          <label for="shoes">Calzado:</label>
+          <select id="shoes" onchange="changeClothes('shoes')">
+            <option value="shoes1">Calzado 1</option>
+            <option value="shoes2">Calzado 2</option>
+            <option value="shoes3">Calzado 3</option>
+          </select>
+        </div>
+        <div>
+          <label for="hat">Sombrero:</label>
+          <select id="hat" onchange="changeClothes('hat')">
+            <option value="hat1">Sombrero 1</option>
+            <option value="hat2">Sombrero 2</option>
+            <option value="hat3">Sombrero 3</option>
+          </select>
+        </div>
       </div>
     </div>
     <script src="js/script.js"></script>
